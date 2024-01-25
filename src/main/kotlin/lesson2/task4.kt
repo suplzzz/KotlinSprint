@@ -7,9 +7,10 @@ fun main(){
     val minedIron = 11.0
 
     val buffPercent = 20
+    val unit = 100
 
-    val bonusCrystals = (minedCrystals / 100 * buffPercent)
-    val bonusIron = (minedIron / 100 * buffPercent)
+    val bonusCrystals = (minedCrystals / unit * buffPercent)
+    val bonusIron = (minedIron / unit * buffPercent)
 
     println("Bonus crystals: ${round(bonusCrystals).toInt()}")
     println("Bonus iron: ${round(bonusIron).toInt()}")
