@@ -1,10 +1,6 @@
 package org.example.lesson4
 
 fun main() {
-    val upperLimit = 100
-    val lowerLimit = 35
-    val acceptableVolume = 100
-
     val weightFirst = 20
     val volumeFirst = 80
 
@@ -13,11 +9,15 @@ fun main() {
 
     println(
         "Груз с весом $weightFirst кг и объемом $volumeFirst л соответсвутет категории 'Average' : " +
-                "${(weightFirst <= upperLimit) and (weightFirst >= lowerLimit) and (volumeFirst < acceptableVolume)}"
+                "${weightFirst <= UPPER_LIMIT && weightFirst >= LOWER_LIMIT && volumeFirst < ACCEPTABLE_VOLUME}"
     )
 
     println(
         "Груз с весом $weightSecond кг и объемом $volumeSecond л соответсвутет категории 'Average' : " +
-                "${(weightSecond <= upperLimit) and (weightSecond >= lowerLimit) and (volumeSecond < acceptableVolume)}"
+                "${weightSecond <= UPPER_LIMIT && weightSecond >= LOWER_LIMIT && volumeSecond < ACCEPTABLE_VOLUME}"
     )
 }
+
+const val UPPER_LIMIT = 100
+const val LOWER_LIMIT = 35
+const val ACCEPTABLE_VOLUME = 100
