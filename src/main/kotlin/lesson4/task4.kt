@@ -2,13 +2,14 @@ package org.example.lesson4
 
 fun main() {
     val day = 5
+    val isElven = day % 2 == 0
 
     println(
         """
-        Упражнения для рук:    ${day % 2 != 0}
-        Упражнения для ног:    ${day % 2 == 0}
-        Упражнения для спины:  ${day % 2 == 0}
-        Упражнения для пресса: ${day % 2 != 0}
+        Упражнения для рук:    ${!isElven}
+        Упражнения для ног:    $isElven
+        Упражнения для спины:  $isElven
+        Упражнения для пресса: ${!isElven}
     """.trimIndent()
     )
 }
