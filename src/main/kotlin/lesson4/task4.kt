@@ -2,6 +2,7 @@ package org.example.lesson4
 
 fun main() {
     val day = 5
+
     val isElven = day % 2 == 0
 
     println(
