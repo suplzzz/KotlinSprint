@@ -17,9 +17,7 @@ fun main() {
 
     if ((input1 == number1 || input1 == number2) && (input2 == number1 || input2 == number2)) {
         println("Поздравляем! Вы выиграли главный приз!")
-    } else if (((input1 == number1 || input1 == number2) && (input2 != number1 && input2 != number2)) ||
-        ((input1 != number1 && input1 != number2) && (input2 == number1 || input2 == number2))
-    ) {
+    } else if (input1 == number1 || input1 == number2 || input2 == number1 || input2 == number2) {
         println("Вы выиграли утешительный приз!")
     } else {
         println("Неудача")
